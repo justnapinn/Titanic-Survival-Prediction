@@ -8,6 +8,19 @@ This project aims to predict the survival of passengers aboard the Titanic based
 
 The Titanic dataset contains information about passengers on board the Titanic, including whether they survived or not. The objective is to predict survival using features like passenger class, sex, age, number of siblings/spouses aboard, number of parents/children aboard, and fare.
 
+## Setup
+
+```python
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("yasserh/titanic-dataset")
+
+print("Path to dataset files:", path)
+
+df = pd.read_csv("/root/.cache/kagglehub/datasets/yasserh/titanic-dataset/versions/1/Titanic-Dataset.csv")
+```
+
 ## Steps Taken
 
 ### 1. Data Preprocessing:
